@@ -6,20 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RockStar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="special.css">
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <header>
                 <h1><a class="logo" href="index.html">SVEA VIKINGS</a></h1>
-            <nav>
-                <ul>
-                <li><a href="index.html">STARTSIDA</a></li>
-                <li><a href="sida2.html">BILJETTER</a></li>
-                <li><a href="sida3.html">VIKING TOUR</a></li>
-                <li class="aktiv"><a href="sida4.html">MERCH</a></li>
-                <li><a href="sida5.html">OM OSS</a></li>
-                </ul>
-            </nav>
+
+                <div class="removeover610">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">STARTSIDA</a>
+                        <a href="sida2.html">BILJETTER</a>
+                        <a href="sida3.html">VIKING TOUR</a>
+                        <a href="sida4.html">MERCH</a>
+                        <a href="sida5.html">OM OSS</a>
+                      </div>
+                    
+                      <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+                </div>
+            <div class="removeunder610">
+                <nav>
+                    <ul>
+                    <li><a href="index.html">STARTSIDA</a></li>
+                    <li><a href="sida2.html">BILJETTER</a></li>
+                    <li><a href="sida3.html">VIKING TOUR</a></li>
+                    <li class="aktiv"><a href="sida4.html">MERCH</a></li>
+                    <li><a href="sida5.html">OM OSS</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <div class="konsert">
