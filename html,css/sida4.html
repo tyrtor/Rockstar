@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RockStar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="special.css">
+    <!-- start av js till hamburger meny -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!-- slut av js till hamburger meny -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><a class="logo" href="index.html">SVEA VIKINGS</a></h1>
+            <!-- start av hamburger meny -->
+            <div class="removeover610">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">STARTSIDA</a>
+                    <a href="sida2.html">BILJETTER</a>
+                    <a href="sida3.html">VIKING TOUR</a>
+                    <a href="sida4.html" class="aktiv">MERCH</a>
+                    <a href="sida5.html">OM OSS</a>
+                </div>
+                <span style="font-size:30px;cursor:pointer;position: fixed;top:42px;left:30px;"
+                    onclick="openNav()">&#9776;</span>
+            </div>
+            <!-- slut av hamburger meny -->
+            <!-- start av vanlig meny -->
+            <div class="removeunder610">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">STARTSIDA</a></li>
+                        <li><a href="sida2.html">BILJETTER</a></li>
+                        <li><a href="sida3.html">VIKING TOUR</a></li>
+                        <li class="aktiv"><a href="sida4.html">MERCH</a></li>
+                        <li><a href="sida5.html">OM OSS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- slut av vanlig meny -->
+        </header>
+        <main>
+            <div class="konsert">
+                <img class="banner" src="../bilder/bandshirts.png" alt="bild på en konsert">
+            </div>
+            <!-- start av main content -->
+            <h2>MERCH</h2>
+            <h3>Köp våra kläder både på plats under en konsert eller här på intenet!</h3>
+            <div class="merch grid-container">
+                <a href="sida6.html"><img class="modell grid-item" src="../bilder/rock-t-shirt-tjej.jpg"
+                        alt="rock tröja dam modell"></a>
+                <a href="sida7.html"><img class="modell grid-item" src="../bilder/rock-t-shirt-herr.jpg"
+                        alt="rock tröja herr modell"></a>
+            </div>
+            <!-- slut av main content -->
+        </main>
+        <footer>
+            <!-- start av footer -->
+            <p class="contact1">
+                    Contact: svea@viking.com | 070 123 66 63 &nbsp;&nbsp; © 2016 SVEA VIKINGS AB B.V. ALL RIGHTS RESERVED. &nbsp;&nbsp; <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!" /> &nbsp;&nbsp; <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                <img style="border:0;width:88px;height:31px"
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                    alt="Valid CSS!" />
+                                </a>
+                    </a>
+                </p>
+                <!-- slut av footer -->
+        </footer>
+    </div>
+</body>
+
+</html>
